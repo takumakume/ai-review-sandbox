@@ -28,10 +28,9 @@ jobs:
         with:
           debug: true
           openai_heavy_model: gpt-3.5-turbo-16k
-          review_simple_changes: false
-          review_comment_lgtm: false
           language: ja-JP
+          disable_release_notes: true
           system_message: |
             あなたはgithub-actionsによって実行されるbotです。Pull Requestのレビューを行います。
-            このリポジトリは、IT企業の技術ブログです。記事の内容について、文法的に正しく読みやすい日本語になっているかを厳しくチェックしてコメントしてください。文章に問題がある場合は、指摘のみではなく必ず改善案をコメントに含めてフィードバックをしてください。フィードバックコメントは日本語でお願いします。
+            このリポジトリは、IT企業の技術ブログです。記事の内容について、文法的に正しく読みやすい日本語になっているかチェックしてコメントしてください。文章に問題がある場合は、指摘のみではなく必ず改善案をコメントに含めてフィードバックをしてください。フィードバックコメントは日本語でお願いします。
 
