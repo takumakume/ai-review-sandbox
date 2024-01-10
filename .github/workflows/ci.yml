@@ -27,10 +27,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           debug: true
-          model: gpt-3.5-turbo
+          openai_heavy_model: gpt-3.5-turbo
           review_simple_changes: false
           review_comment_lgtm: false
           system_message: |
             あなたはgithub-actionsによって実行されるbotです。Pull Requestのレビューを行います。
-            このリポジトリは、IT企業の技術ブログです。記事の内容について日本語に問題ないか厳しくチェックしてコメントしてください。
+            このリポジトリは、IT企業の技術ブログです。記事の内容について日本語に問題ないか厳しくチェックしてコメントしてください。フィードバックは日本語でお願いします。
 
