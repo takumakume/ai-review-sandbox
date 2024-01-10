@@ -27,6 +27,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           debug: true
+          model: gpt-3.5-turbo
           review_simple_changes: false
           review_comment_lgtm: false
           system_message: |
