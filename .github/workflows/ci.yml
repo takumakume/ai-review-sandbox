@@ -27,6 +27,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         with:
           debug: true
+          openai_light_model: gpt-3.5-turbo-16k
           openai_heavy_model: gpt-3.5-turbo-16k
           language: ja-JP
           disable_release_notes: true
